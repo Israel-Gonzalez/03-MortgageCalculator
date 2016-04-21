@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mortgage Calculator</title>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<style type="text/css">
+		#header {
+			display: column;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		li, p {
+			font-weight: bold;
+			font-size: 20px;
+			letter-spacing: .25px;
+		}
+		input, select, button {
+			border-radius: 20px;
+			margin: 10px;
+			padding: 10px;
+		}
+
+	</style>
+	<body>
+		<header id="header">jQuery Mortgage Calculator</header>
+		<hr>
+		<ul id="list" style="list-style-type: none">
+<!--		<li>Date</li>
+			<input type="text" id="datepicker"></input>
+			<li>Deposit</li>
+			<input type="number" id="deposit"></input>
+	-->		<li>Loan Balance</li>
+				<input type="number" id="balance"></input>
+			<li>Interest Rate (%)</li>
+				<input type="number" id="rate"></input>
+			<li>Loan Term (years)</li>
+				<input type="number" id="term"></input>
+			<li>Period</li>
+			<select id="select">
+				<option value="12">Monthly</option>
+				<option value="24">Bi-monthly</option>
+			</select>
+		</ul>
+		<button type="submit" id="button" onclick="calculate()">Calculate</button>
+		<p id="finalCalc"></p>
+	</body>
+</html>
