@@ -1,6 +1,6 @@
 function calculate(){
 
-//	var deposit = $('#deposit').val();
+
 	var balance = $('#balance').val();
 	var rate = $('#rate').val();
 	var term = $('#term').val();
@@ -13,7 +13,7 @@ function calculate(){
 	var monthlyPayment = balance * interestQuotient;
 
 	var totalCost = monthlyPayment * numberOfPayments;
-	// var totalInterest = balance / (term * period) * (period * ???? ;
+
 
 	$('#finalCalc').append("<p>Mortgage calculates to $" + Math.round(monthlyPayment) + "/month. Overall cost of loan is $" + Math.round(totalCost) + ".  </p>");
 
